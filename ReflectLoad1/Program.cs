@@ -39,6 +39,10 @@ namespace ReflectLoad1
                                 var cons = att.ConstructorArguments[0];
                                 Console.WriteLine($"found a custom attribute: {cons}");
                             }
+                            else
+                            {
+                                Console.WriteLine($"attribute name is {att.AttributeType.Name}");
+                            }
                         }
                         Console.WriteLine();
 
